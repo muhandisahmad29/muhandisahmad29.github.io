@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HAANS VGRAPHER</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: #090909;
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      padding: 24px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #292929;
+    }
+    .logo { font-size: 17px; font-weight: bold; letter-spacing: 2px; }
+    nav { display: flex; gap: 20px; }
+    a { color: inherit; text-decoration: none; }
+    nav a { font-size: 11px; color: #aaa; }
+    .hero {
+      min-height: 75vh;
+      padding: 100px 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: radial-gradient(ellipse at 80% 35%, #303030, #090909 65%);
+    }
+    .label { color: #999; letter-spacing: 4px; font-size: 11px; }
+    h1 {
+      font-size: clamp(48px, 9vw, 100px);
+      line-height: 1;
+      letter-spacing: -4px;
+      margin: 25px 0;
+    }
+    h1 span { color: #777; }
+    .intro { max-width: 460px; color: #aaa; line-height: 1.8; }
+    .button {
+      display: inline-block;
+      border: 1px solid #aaa;
+      padding: 14px 20px;
+      margin-top: 22px;
+      width: fit-content;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+    section { padding: 70px 8%; border-top: 1px solid #292929; }
+    h2 { font-size: 34px; }
+    .works {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .work { background: #161616; }
+    .visual {
+      aspect-ratio: 16 / 10;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #383838, #111, #292929);
+      color: #bbb;
+      letter-spacing: 3px;
+      font-size: 12px;
+    }
+    .work h3, .work p { margin-left: 15px; margin-right: 15px; }
+    .work p, .about { color: #aaa; line-height: 1.8; }
+    footer {
+      padding: 25px 8%;
+      color: #777;
+      font-size: 11px;
+    }
+    @media (max-width: 550px) {
+      header { flex-direction: column; gap: 18px; }
+      nav { gap: 16px; }
+      .hero { min-height: 65vh; padding: 70px 7%; }
+      h1 { letter-spacing: -2px; }
+      .works { grid-template-columns: 1fr; }
+      section { padding: 50px 7%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="#home">HAANS VGRAPHER.</a>
+    <nav>
+      <a href="#works">WORKS</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <p class="label">VIDEOGRAPHY · VISUAL STORYTELLING</p>
+      <h1>EVERY FRAME<br><span>TELLS A STORY.</span></h1>
+      <p class="intro">
+        Mengabadikan momen, merangkai cerita, dan
+        menciptakan visual yang bermakna.
+      </p>
+      <a class="button" href="#works">EXPLORE MY WORK ↗</a>
+    </div>
+
+    <section id="works">
+      <p class="label">MY PORTFOLIO</p>
+      <h2>Selected Works.</h2>
+      <div class="works">
+        <article class="work">
+          <div class="visual">01 / EVENT FILM</div>
+          <h3>Event & After Movie</h3>
+          <p>Momen yang diabadikan menjadi cerita.</p>
+        </article>
+        <article class="work">
+          <div class="visual">02 / CINEMATIC</div>
+          <h3>Cinematic Visuals</h3>
+          <p>Menemukan cerita dalam setiap frame.</p>
+        </article>
+        <article class="work">
+          <div class="visual">03 / DOCUMENTARY</div>
+          <h3>Documentary</h3>
+          <p>Cerita nyata dari sudut pandang visual.</p>
+        </article>
+        <article class="work">
+          <div class="visual">04 / CREATIVE</div>
+          <h3>Creative Projects</h3>
+          <p>Ide kreatif yang diwujudkan menjadi visual.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="label">BEHIND THE CAMERA</p>
+      <h2>Hello, I'm Haans.</h2>
+      <p class="about">
+        Seorang kreator visual yang tertarik pada videografi,
+        video editing, dan digital storytelling. Bagiku, video
+        bukan hanya tentang gambar yang indah, tetapi juga
+        cerita di balik setiap momen.
+      </p>
+    </section>
+
+    <section id="contact">
+      <p class="label">LET'S CONNECT</p>
+      <h2>Have a story to tell?</h2>
+      <p class="about">Mari ciptakan sesuatu yang bermakna.</p>
+      <a class="button"
+         href="https://www.instagram.com/hans_vgrapher/"
+         target="_blank" rel="noopener noreferrer">
+        INSTAGRAM ↗
+      </a>
+    </section>
+  </main>
+
+  <footer>© 2026 HAANS VGRAPHER · MADE WITH PASSION.</footer>
+</body>
+</html>
